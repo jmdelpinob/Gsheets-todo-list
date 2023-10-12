@@ -8,6 +8,18 @@ This Google Apps Script is designed to automatically sort a ToDo list in Google 
 
 The script listens for edits on your Google Sheet and, when an edit is detected in column C of the "Todo List" sheet, it sorts the tasks based on values in columns A and D. The sorting is conducted as per predefined orders set within the script for these columns.
 
+## Sheet Structure and Naming
+
+For the script to function correctly, it's imperative to structure your Google Sheet in accordance with the predefined format. The sheet containing your ToDo list should be named "Todo List". The columns should be structured as follows in row 1, serving as the headers:
+
+A: Category
+B: Description
+C: When
+D: Comments
+Ensure that these headers are placed exactly as described, as the script references these specific locations to execute the sorting functionality. Additionally, the script sorts data from row 2 onwards, assuming that row 1 is reserved for these headers, and thus exempt from the sort to preserve the header names and order.
+
+You can view and use [this example Google Sheet](https://docs.google.com/spreadsheets/d/1mW0CxmKSv3NJPNOS20_ei9IGKt0vncgtr-7yIoSS_sI/edit?usp=sharing) as a template or reference (you need to be logged in for the script to work). Make sure to comply with the described structure to ensure that the script operates effectively. If you'd like to modify the script for different column names or positions, you might need to adjust the referenced column indices within the script accordingly.
+
 ## Setup Instructions
 
 1. **Access the Script Editor:**
